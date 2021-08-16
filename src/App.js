@@ -1,6 +1,9 @@
 import React from "react";
 import ItemCard from "./components/ItemCard";
 import "./App.css";
+import Form from "./modules/Form";
+import AuthenticationScreen from "./modules/AuthenticationScreen.js";
+import Toggling from "./modules/Toggling";
 
 class App extends React.Component {
   constructor() {
@@ -65,6 +68,9 @@ class App extends React.Component {
         {this.products.map((item, index) => {
           return <ItemCard key={index} name={item.name} price={item.price} />;
         })}
+        <Form />
+        <AuthenticationScreen isLoggedIn={false} />
+        <Toggling />
       </div>
     );
   }

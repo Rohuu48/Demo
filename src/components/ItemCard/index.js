@@ -1,5 +1,3 @@
-import React from "react";
-
 function ItemCard(props) {
   console.log("itemcard");
   return (
